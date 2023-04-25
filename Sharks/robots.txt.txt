@@ -1,0 +1,10 @@
+user-agent: *
+allow: /index.html
+allow: /pool.html
+allow: /diner.html
+allow: /event.html
+allow: /poolbooking.html
+crawl-delay: 3
+
+disallow: /dinnerbooking.html
+
