@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <title>Booking</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <body id="bookingside">
+
+
+    <div class="topnav" id="myTopnav">
+  <img id="logo" src="Hajmeddig.png" alt="Logo"> 
+  <a href="index.html">Hjem</a>
+  <a href="diner.html">Diner</a>
+  <a href="pool.html">Pool</a>
+  <a href="event.html">Events</a>
+
+      <a href="javascript:void(0);" class="icon" onclick="burger()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+        <h1>Book bord til vores diner her</h1>
+        <div id="booking">
+        <label for="dato">Vælg dato:</label>
+
+<input type="date" class="dato" id="dato"
+       value="2023-01-01"
+       min="2023-01-01" max="2023-12-31">
+
+       <label for="tid">Vælg tidspunkt:</label>
+
+<input type="time" class="tid" name="tid" id="tid"
+       min="12:00" max="20:00" required>
+
+              <label for="mennesker">Antal mennesker:</label>
+
+              <input type="number" id="mennesker" name="mennesker"
+                     min="1" max="100">
+
+             <label for="email">Indtast email:</label>
+
+                     <input type="email" id="email">  
+
+            <label for="navn">Indtast dit navn:</label>
+
+            <input type="text" id="navn" name="navn">
+
+            
+            <label for="tlf">Indtast dit telefonnummer:</label>
+
+            <input type="tel" id="tlf" name="tlf">
+<br>
+<br>
+
+<button id="tjek" onclick="myFunction()">Tjek tilgængelighed</button>
+<div id="gemt">
+    Der var et tilgængeligt bord.
+    <br>
+    <button id="bookknap" onclick="myFunction1()">Book nu</button>
+  </div>
+
+    <div id="done">
+        Booking bekræftet, du vil modtage en bekræftelsesmail.
+    </div>            
+        </div> 
+
+    <script>
+      function burger() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      
+
+      }
+      </script>
+ 
+            <script>
+                function myFunction() {
+                  var x = document.getElementById("gemt");
+                  if (x.style.display === "block") {
+                    x.style.display = "none";
+                  } else {
+                    x.style.display = "block";
+                  }
+                }
+                </script>         
+                            <script>
+                                function myFunction1() {
+                                  var x = document.getElementById("done");
+                                  if (x.style.display === "block") {
+                                    x.style.display = "none";
+                                  } else {
+                                    x.style.display = "block";
+                                  }
+                                  
+                                }
+                                </script>      
+<footer>
+  <div class="footeroverskrift">
+      <h2>HAR DU SPØRGSMÅL ELLER ØNSKER DU AT BOOKE TID?</h2>
+      <h3>DU ER ALTID VELKOMMEN TIL AT KONTAKTE OS</h3>
+  </div>
+  <div class="footerindhold">
+      <div class="box1">
+              <img src="media/location-white.svg" alt="location" id="location">
+              <h1>LOKATION:</h1>
+              <p>Aarhus C<br>Sharks Poolhall<br>Frederiksgade 25</p>
+      </div>
+      <div class="box2">
+              <img src="media/chat-white.svg" alt="chat" id="chat">
+              <h1>KONTAKT:</h1>
+              <p>Tlf.: 86 18 09 90<br>mail@sharks.dk</p>
+          <div class="so-me">
+                  <div class="footerhr">
+                      <hr>
+                  </div>
+              <a href="https://www.instagram.com/sharkspoolhallogdiner/?hl=da"><img src="media/instagram-white.svg" alt="connect-instagram" class="brands"></a>
+              <a href="https://www.facebook.com/sharksaarhus"><img src="media/facebook-white.svg" alt="connect-facebook" class="brands"></a>
+              <img src="media/linkedin-white.svg" alt="connect-linkedin" class="brands">
+          </div>
+      </div>
+          <div class="box3">
+                  <img src="media/schedule-white.svg" alt="schedule" id="schedule">
+                  <h1>ÅBNINGSTIDER:</h1>
+              <div class="boxtext">
+                  <div class="poolhall">
+                      <p class="box3text">Poolhall<br>Man - tor: 12 - 01<br>Fredag:   12 - 03<br>Lørdag:   11 - 03<br>Søndag:   11 - 01</p>
+                  </div>
+                  <div class="diner">
+                      <p class="box3text">Diner<br>Man - fre: 12 - 23<br>Lørdag: 11 - 23<br>Søndag: 11 - 23</p>
+                  </div>
+              </div>
+          </div>
+  </div>
+</footer>
+    </body>
+</html>

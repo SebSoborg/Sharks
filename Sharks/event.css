@@ -1,0 +1,421 @@
+
+body {
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,1) 6%, rgba(115,115,115,1) 100%);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+#booking {
+    width: 30%;
+    margin-left: 35%;
+    margin-top: 3%;
+    background-color: rgb(133, 133, 133);
+    opacity: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 3%;
+}
+h1 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    opacity: 70%;
+   
+}
+input {
+    text-align: center;
+    width: 50%;
+    margin-left: 25%;
+    color: black;
+    padding: 1%;
+}
+label {
+    text-align: center;
+    padding: 2%;
+}
+select {
+    text-align: center;
+    width: 53%;
+    margin-left: 25%;
+    color: black;
+    padding: 1%;
+    margin-top: 7%;
+}
+
+@media screen and (min-width:1080px) {
+#tjek {
+    background-color: rgb(0, 182, 24);
+    border-radius: 25px;
+    border: 3px solid;
+    border-color: rgb(255, 0, 0);
+    font-size: 16px;
+    width: 50%;
+    margin-left: 25%;
+    height: 50px;
+    word-wrap: break-word;
+    white-space:normal;
+    overflow:hidden
+}
+}
+@media screen and (max-width:1080px) {
+    #tjek {
+        background-color: rgb(0, 182, 24);
+        border-radius: 25px;
+        border: 3px solid;
+        border-color: rgb(255, 0, 0);
+        font-size: 16px;
+        width: 100%;
+        height: 50px;
+        word-wrap: break-word;
+        white-space:normal;
+        overflow:hidden
+    }
+    }
+#done {
+    display: none;
+    text-align: center;
+    margin-top: 2%;
+    font-size: 20px;
+    margin-bottom: 2%;
+}
+#gemt {
+    display: none;
+    text-align: center;
+    margin-top: 2%;
+    font-size: 20px;
+}
+
+@media screen and (min-width:1080px) {
+#bookknap {
+    background-color: rgb(0, 182, 24);
+    width: 30%;
+    margin-top: 3%;
+    border: 3px solid;
+    border-color: rgb(255, 0, 0);
+    border-radius: 25px;
+    height: 50px;
+    font-size: 16px;
+    word-wrap: break-word;
+    white-space:normal;
+    overflow:hidden
+}
+}
+@media screen and (max-width:1080px) {
+    #bookknap {
+        background-color: rgb(0, 182, 24);
+        width: 100%;
+        margin-top: 3%;
+        border: 3px solid;
+        border-color: rgb(255, 0, 0);
+        border-radius: 25px;
+        height: 50px;
+        font-size: 16px;
+        word-wrap: break-word;
+        white-space:normal;
+        overflow:hidden
+    }
+}
+.topnav {
+
+    overflow: hidden;
+    background: rgb(236,28,36);
+    background: linear-gradient(90deg, rgba(236,28,36,1) 14%, rgba(177,50,50,1) 66%);
+    margin-top: -0.5%;
+    position: sticky;
+    top: 0%;
+    z-index: 1;
+    border: black solid 2px;
+  }
+  
+  .topnav a {
+
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    transition: text-decoration 0.5s;
+    text-decoration: underline;
+    text-decoration-color: #dd1515;
+    
+    margin-left: 15%;
+  }
+  
+  .topnav a:hover {
+    text-decoration: underline;
+    text-decoration-color: white;
+    text-decoration-thickness: 3px;
+  }
+  
+  #logo {
+    width: 130px;
+    height: 130px;
+    position: fixed;
+    top: 0%;
+    margin-left: 40px;
+    max-width: 100%;
+   
+  }
+  .topnav .icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 1080px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+      margin-right: 5%;
+    }
+  }
+  
+  @media screen and (max-width: 1080px) {
+    .topnav.responsive {position: sticky;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: center;
+  }
+}
+@media screen and (max-width: 1080px) {
+  h1 {
+font-size: 17px;
+text-align: center;
+  }
+    }
+    @media screen and (max-width: 1080px) {
+       #logo {
+        width: 100px;
+        height: 100px;
+       }
+        }
+        @media screen and (max-width: 1080px) {
+        #booking {
+            width: 50%;
+            margin-left: 25%;
+        }
+    }
+.pooltop {
+    width: 100%;
+    height: 25%;
+    margin-top: -10%;
+}
+#poolhalltekst1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+ #tekst1 {
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 128px;
+    line-height: 154px;
+    -webkit-text-stroke: #dd1515;
+    -webkit-text-stroke-width: 1px;
+    margin-top: -2%;
+    font-weight: bold;
+    
+}
+@media screen and (max-width:1020px){
+    #tekst1 {
+        font-size: 60px;
+        color: white;
+        -webkit-text-stroke: #dd1515;
+        -webkit-text-stroke-width: 3px;
+    }
+}
+            
+            @media screen and (max-width:1020px){
+                .footerindhold {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                 justify-content: center;
+                 margin-left: 0;
+                 margin-right: 0;
+                
+            
+                    width: 100%;
+                }
+                #chat {
+                    width: 30%;
+                }
+                #location {
+                    width: 30%;
+                }
+                #schedule {
+                    width: 30%;
+                }
+            
+                
+            }
+            
+            
+            
+            @media screen and (min-width:1020px){
+            
+            #location {
+                width: 30%;
+            }
+            
+            #chat {
+                width: 10%;
+            
+            }
+            
+            #schedule {
+                width: 30%;
+            
+            }
+            
+            }
+            
+            
+            /* <----- footer -----> */
+            footer {
+                display: flex;
+                flex-direction: column;
+                background-color: #606C51;
+                color: white;
+                padding-top: 2%;
+                border: black 2px;
+                border-style: solid;
+
+            }
+            
+            .footeroverskrift {
+                text-align: center;
+                margin-bottom: 2%;
+                padding-bottom: 2%;
+            
+            }
+            
+            /* <----- footer indhold ----->*/
+            .footerindhold {
+                display: flex;
+                justify-content: space-evenly;
+                padding-bottom: 2%;
+            }
+            
+            footer p {
+                font-family: 'Abel', sans-serif;
+            }
+            
+            footer h1{
+                font-family: 'Bebas Neue', cursive;
+                letter-spacing: 2pt;
+            }
+            footer h2{
+                font-family: 'Bebas Neue', cursive;
+                letter-spacing: 2pt;
+            }
+            footer h3{
+                font-family: 'Bebas Neue', cursive;
+                letter-spacing: 2pt;
+            }
+            
+            .box1 {
+                
+                
+                text-align: center;
+            }
+            
+            .box2 {
+               
+                text-align: center;
+            }
+            
+            .footerhr {
+                width: 20%;
+                margin-right: 40%;
+                margin-left: 40%;
+                margin-bottom: 1%;
+            }
+            
+            .so-me {
+                margin-top: 1%;
+            }
+            
+            .box3 {
+              
+                text-align: center;
+              
+                
+            }
+            
+            .boxtext {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+            }
+            
+            .brands {
+                width: 4%;
+                margin-left: 1%;
+            }
+            
+/* <----- TURNERING! ------> */
+
+.turnering {
+    display: flex;
+    -webkit-text-stroke: #dd1515;
+    -webkit-text-stroke-width: 1px;
+    font-size: larger;
+    font-family: 'Bebas Neue', cursive;
+    justify-content: center;
+    overflow: hidden;
+    background-color: black;
+    position: relative;
+}
+
+.turneringp {
+    position: absolute;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 10vw;
+    bottom: 0;
+    color: white;
+}
+
+.turneringsinfo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column ;
+    color: white;
+    
+
+}
+
+.turneringsinfo h2 {
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.turneringsinfo p {
+    text-align: center;
+    font-family: 'Abel', sans-serif;
+}
+
+.turneringbillede {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    size: 100%;
+}
+
+#poolbord {
+width: 100%;
+
+}
+
+
+            

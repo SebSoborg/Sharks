@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <title>Booking</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <body id="poolhallbody">
+
+
+  
+    <div class="topnav" id="myTopnav">
+      <img id="logo" src="Hajmeddig.png" alt="Logo">
+      <a href="index.html">Hjem</a>
+      <a href="diner.html">Diner</a>
+      <a href="pool.html">Pool</a>
+      <a href="event.html">Events</a>
+
+      <a href="javascript:void(0);" class="icon" onclick="burger()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+<img class="pooltop" src="poolhall.jpg" alt="Pool">
+<div id="poolhalltekst1">
+    <h1 id="tekst1">SHARKS POOLHALL</h1>
+</div>
+<div id="container">
+<img id="poolmid" src="pool2.png" alt="Pool">
+<div id="containerpool">
+    <h2 id="reservera">POOL RESERVATION</h2>
+    <p id="reserverp">Hva’ enten du vil spille pool, airhockey, elektronisk dart, pokermaskine, bordfodbold eller kører racerbiler er vi her for at gi’ dig en på opleveren!</p>
+ 
+    <button id="bookpool" onclick="window.location.href='poolbooking.html'">BOOK BORD HER</button>
+
+</div>
+</div>
+
+<footer>
+  <div class="footeroverskrift">
+      <h2>HAR DU SPØRGSMÅL ELLER ØNSKER DU AT BOOKE TID?</h2>
+      <h3>DU ER ALTID VELKOMMEN TIL AT KONTAKTE OS</h3>
+  </div>
+  <div class="footerindhold">
+      <div class="box1">
+              <img src="media/location-white.svg" alt="location" id="location">
+              <h1>LOKATION:</h1>
+              <p>Aarhus C<br>Sharks Poolhall<br>Frederiksgade 25</p>
+      </div>
+      <div class="box2">
+              <img src="media/chat-white.svg" alt="chat" id="chat">
+              <h1>KONTAKT:</h1>
+              <p>Tlf.: 86 18 09 90<br>mail@sharks.dk</p>
+          <div class="so-me">
+                  <div class="footerhr">
+                      <hr>
+                  </div>
+              <a href="https://www.instagram.com/sharkspoolhallogdiner/?hl=da"><img src="media/instagram-white.svg" alt="connect-instagram" class="brands"></a>
+              <a href="https://www.facebook.com/sharksaarhus"><img src="media/facebook-white.svg" alt="connect-facebook" class="brands"></a>
+              <img src="media/linkedin-white.svg" alt="connect-linkedin" class="brands">
+          </div>
+      </div>
+          <div class="box3">
+                  <img src="media/schedule-white.svg" alt="schedule" id="schedule">
+                  <h1>ÅBNINGSTIDER:</h1>
+              <div class="boxtext">
+                  <div class="poolhall">
+                      <p class="box3text">Poolhall<br>Man - tor: 12 - 01<br>Fredag:   12 - 03<br>Lørdag:   11 - 03<br>Søndag:   11 - 01</p>
+                  </div>
+                  <div class="diner">
+                      <p class="box3text">Diner<br>Man - fre: 12 - 23<br>Lørdag: 11 - 23<br>Søndag: 11 - 23</p>
+                  </div>
+              </div>
+          </div>
+  </div>
+</footer>
+    <script>
+      function burger() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      
+
+      }
+      </script>
+
+    </body>
+</html>
